@@ -877,8 +877,7 @@ function editTeam(id){
 }
 async function delTeam(id){
   if (!confirm("Delete this team and all its submissions?")) return;
-  await rpc("admin_delete_team", { p_pin:A.pin, p_id:id });
-  closeSheet(); refreshAdmin();
+  if (await guard(() => rpc("admin_delete_team", { p_pin:A.pin, p_id:id }), "Team deleted")) closeSheet();
 }
 
 function nudge(id, leg){
@@ -1014,8 +1013,7 @@ function editLeg(id, teamId, forceFinal){
 }
 async function delLeg(id){
   if (!confirm("Delete this stop?")) return;
-  await rpc("admin_delete_leg", { p_pin:A.pin, p_id:id });
-  closeSheet(); refreshAdmin();
+  if (await guard(() => rpc("admin_delete_leg", { p_pin:A.pin, p_id:id }), "Stop deleted")) closeSheet();
 }
 
 function panelChallenges(){
@@ -1051,8 +1049,7 @@ function editCh(id){
 }
 async function delCh(id){
   if (!confirm("Delete this challenge?")) return;
-  await rpc("admin_delete_challenge", { p_pin:A.pin, p_id:id });
-  closeSheet(); refreshAdmin();
+  if (await guard(() => rpc("admin_delete_challenge", { p_pin:A.pin, p_id:id }), "Challenge deleted")) closeSheet();
 }
 
 function panelSettings(){
@@ -1088,24 +1085,41 @@ function panelSettings(){
     </div>`;
 }
 
+/* Every admin action goes through this, so a call that fails says so
+   instead of leaving a button that looks broken. */
+async function guard(run, okMsg){
+  try {
+    const r = await run();
+    if (r && r.ok === false){ toast(r.error || "That didn't work", "bad"); return null; }
+    if (okMsg) toast(typeof okMsg === "function" ? okMsg(r) : okMsg, "good");
+    refreshAdmin();
+    return r;
+  } catch (e){
+    toast(e.message || "That didn't go through — check your connection", "bad");
+    return null;
+  }
+}
+
 async function setStarted(v){
-  await rpc("admin_set_settings", { p_pin:A.pin, p_game_name:null, p_started:v, p_new_pin:null });
-  toast(v ? "Race started" : "Paused", "good"); refreshAdmin();
+  guard(() => rpc("admin_set_settings",
+    { p_pin:A.pin, p_game_name:null, p_started:v, p_new_pin:null }),
+    v ? "Race started" : "Paused");
 }
 async function saveName(){
-  await rpc("admin_set_settings", { p_pin:A.pin, p_game_name:val("s_name"), p_started:null, p_new_pin:null });
-  toast("Saved", "good"); refreshAdmin();
+  guard(() => rpc("admin_set_settings",
+    { p_pin:A.pin, p_game_name:val("s_name"), p_started:null, p_new_pin:null }), "Saved");
 }
 async function savePin(){
   const p = val("s_pin");
   if (!p) return;
-  await rpc("admin_set_settings", { p_pin:A.pin, p_game_name:null, p_started:null, p_new_pin:p });
-  A.pin = p; toast("PIN changed", "good"); refreshAdmin();
+  const r = await guard(() => rpc("admin_set_settings",
+    { p_pin:A.pin, p_game_name:null, p_started:null, p_new_pin:p }), "PIN changed");
+  if (r) A.pin = p;
 }
 async function resetGame(){
   if (!confirm("Wipe every submission and reset all teams?")) return;
-  await rpc("admin_reset_game", { p_pin:A.pin });
-  toast("Reset", "good"); refreshAdmin();
+  guard(() => rpc("admin_reset_game", { p_pin:A.pin }),
+    r => `${r.teams_reset} teams back to the start · ${r.submissions_cleared} submissions cleared`);
 }
 
 /* --- generic admin sheet -------------------------------------------- */
