@@ -36,7 +36,7 @@ input:focus,textarea:focus,select:focus{border-color:var(--accent)}
 textarea{resize:vertical;min-height:64px}
 label{display:block;font-size:13px;color:var(--muted);margin:0 0 6px}
 .field{margin-bottom:12px}
-
+ 
 .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:12px}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
@@ -59,7 +59,7 @@ label{display:block;font-size:13px;color:var(--muted);margin:0 0 6px}
 .center{text-align:center}
 .hide{display:none !important}
 .stack>*+*{margin-top:10px}
-
+ 
 .topbar{
   position:sticky;top:0;z-index:20;background:rgba(11,15,20,.92);
   backdrop-filter:blur(10px);border-bottom:1px solid var(--line)
@@ -67,18 +67,18 @@ label{display:block;font-size:13px;color:var(--muted);margin:0 0 6px}
 .topbar .wrap{padding-block:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}
 .badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;
   padding:5px 10px;border-radius:999px;background:var(--panel2);border:1px solid var(--line)}
-
+ 
 .progress{display:flex;gap:5px;margin:14px 0 6px}
 .progress i{flex:1;height:7px;border-radius:99px;background:var(--panel2)}
 .progress i.on{background:var(--accent)}
 .progress i.now{background:var(--warn)}
-
+ 
 .dots{display:flex;gap:8px;margin-top:12px}
 .dots i{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
   background:var(--panel2);border:2px solid var(--line);font-size:15px;font-style:normal}
 .dots i.on{background:var(--good);border-color:var(--good);color:#04180b;font-weight:800}
 .dots i.pend{border-color:var(--warn);color:var(--warn)}
-
+ 
 .hero{border-radius:var(--radius);padding:20px;border:1px solid var(--line);
   background:linear-gradient(160deg,var(--panel2),var(--panel));margin-bottom:12px}
 .hero.unlocked{border-color:var(--good);
@@ -90,7 +90,7 @@ label{display:block;font-size:13px;color:var(--muted);margin:0 0 6px}
 .kicker{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .place{font-size:24px;font-weight:800;letter-spacing:-.02em;margin-top:6px}
 .task{margin-top:14px;padding:12px 14px;background:rgba(0,0,0,.28);border-radius:12px;border:1px solid var(--line)}
-
+ 
 .item{display:flex;gap:12px;align-items:flex-start;padding:13px;border-radius:12px;
   background:var(--panel2);border:1px solid var(--line);margin-bottom:8px}
 .item .grow{flex:1;min-width:0}
@@ -101,38 +101,38 @@ label{display:block;font-size:13px;color:var(--muted);margin:0 0 6px}
 .pill.pending{background:rgba(245,158,11,.18);color:var(--warn)}
 .pill.approved{background:rgba(34,197,94,.18);color:var(--good)}
 .pill.rejected{background:rgba(239,68,68,.18);color:var(--bad)}
-
+ 
 .tabs{display:flex;gap:6px;background:var(--panel2);padding:5px;border-radius:12px;margin-bottom:12px;
   overflow-x:auto;-webkit-overflow-scrolling:touch}
 .tabs button{flex:1;padding:9px 12px;border-radius:9px;font-size:14px;font-weight:600;
   color:var(--muted);white-space:nowrap}
 .tabs button.on{background:var(--panel);color:var(--text);box-shadow:0 1px 3px rgba(0,0,0,.4)}
-
+ 
 .lb{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:12px;
   background:var(--panel2);border:1px solid var(--line);margin-bottom:7px}
 .lb .rank{width:26px;font-weight:800;color:var(--muted);font-size:15px;text-align:center}
 .lb .bar{height:6px;border-radius:99px;background:var(--line);margin-top:6px;overflow:hidden}
 .lb .bar span{display:block;height:100%;border-radius:99px}
-
+ 
 .sheet{position:fixed;inset:0;z-index:60;background:rgba(4,7,10,.72);
   display:flex;align-items:flex-end;justify-content:center;padding:0}
 .sheet .inner{background:var(--panel);width:100%;max-width:620px;max-height:92vh;overflow-y:auto;
   border-radius:20px 20px 0 0;border-top:1px solid var(--line);padding:18px;
   padding-bottom:calc(18px + env(safe-area-inset-bottom));animation:up .22s ease}
 @keyframes up{from{transform:translateY(24px);opacity:.6}to{transform:none;opacity:1}}
-
+ 
 .drop{border:2px dashed var(--line);border-radius:14px;padding:22px 16px;text-align:center;background:var(--panel2)}
 .preview{width:100%;border-radius:12px;max-height:320px;object-fit:contain;background:#000;display:block}
 .bar{height:8px;background:var(--panel2);border-radius:99px;overflow:hidden;margin-top:10px}
 .bar span{display:block;height:100%;background:var(--accent);width:0;transition:width .2s}
-
+ 
 .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:90;
   background:var(--panel);border:1px solid var(--line);border-radius:12px;
   padding:12px 18px;font-size:14px;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,.5);
   max-width:calc(100vw - 32px)}
 .toast.bad{border-color:var(--bad)}
 .toast.good{border-color:var(--good)}
-
+ 
 .media{width:100%;border-radius:12px;background:#000;max-height:340px;object-fit:contain;display:block}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 @media (max-width:420px){.grid2{grid-template-columns:1fr}}
@@ -155,12 +155,12 @@ a{color:var(--accent)}
    ===================================================================== */
 const SUPABASE_URL      = "https://alztgfsuxndqfxjpecce.supabase.co";     // https://xxxx.supabase.co
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFsenRnZnN1eG5kcWZ4anBlY2NlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODkwNTkwMjgsImV4cCI6MjEwNDYzNTAyOH0.1bAGXqeEQwkdlaa9HyBOxsskw7di4P956F4IX22HJLU";
-
+ 
 /* ===================================================================== */
-
+ 
 const CONFIGURED = !SUPABASE_URL.startsWith("PASTE") && !SUPABASE_ANON_KEY.startsWith("PASTE");
 const sb = CONFIGURED ? supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
-
+ 
 const app   = document.getElementById("app");
 const modal = document.getElementById("modal");
 // Team codes are remembered so a phone doesn't ask twice. The admin PIN is
@@ -170,12 +170,12 @@ const LS = {
   get code(){ return localStorage.getItem("race_code") || ""; },
   set code(v){ v ? localStorage.setItem("race_code", v) : localStorage.removeItem("race_code"); }
 };
-
+ 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
   ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const mediaUrl = p => `${SUPABASE_URL}/storage/v1/object/public/media/${p}`;
 const isVideo  = t => (t || "").startsWith("video");
-
+ 
 let toastTimer;
 function toast(msg, kind){
   clearTimeout(toastTimer);
@@ -186,14 +186,14 @@ function toast(msg, kind){
   document.body.appendChild(d);
   toastTimer = setTimeout(() => d.remove(), 3400);
 }
-
+ 
 async function rpc(fn, args){
   if (!CONFIGURED) throw new Error("Supabase keys are not set in index.html");
   const { data, error } = await sb.rpc(fn, args);
   if (error) throw error;
   return data;
 }
-
+ 
 /* ---------------------------------------------------------------------
    Upload — photos get squeezed down so they fly on a weak signal,
    videos go up untouched.
@@ -212,7 +212,7 @@ async function shrinkImage(file){
     return (blob && blob.size < file.size) ? new File([blob], "photo.jpg", { type:"image/jpeg" }) : file;
   } catch { return file; }
 }
-
+ 
 async function uploadMedia(file, teamId, onProgress){
   let f = file;
   if ((file.type || "").startsWith("image")) f = await shrinkImage(file);
@@ -226,17 +226,17 @@ async function uploadMedia(file, teamId, onProgress){
   onProgress && onProgress(100);
   return { path, type: f.type || "" };
 }
-
+ 
 /* =====================================================================
    TEAM APP
    ===================================================================== */
 const T = { code:"", state:null, tab:"todo", poll:null, naming:false };
-
+ 
 function stageLabel(s){
   return { challenges:"Banking challenges", travel:"On the move",
            checkpoint_review:"Waiting on approval", finished:"Finished" }[s] || s;
 }
-
+ 
 async function refreshTeam(quiet){
   try {
     const d = await rpc("team_state", { p_code: T.code });
@@ -251,15 +251,15 @@ async function refreshTeam(quiet){
     renderTeam();
   } catch (e) { if (!quiet) toast(e.message || "Connection problem", "bad"); }
 }
-
+ 
 function startPoll(fn, ms){ stopPoll(); T.poll = setInterval(fn, ms); }
 function stopPoll(){ if (T.poll) clearInterval(T.poll); T.poll = null; }
-
+ 
 /* --- login ---------------------------------------------------------- */
 async function renderLogin(msg){
   let pub = null;
   try { if (CONFIGURED) pub = await rpc("game_public", {}); } catch {}
-
+ 
   app.innerHTML = `
     <div class="wrap" style="padding-top:44px">
       <div class="center" style="margin-bottom:26px">
@@ -267,12 +267,12 @@ async function renderLogin(msg){
         <h1 style="margin-top:10px">${esc(pub?.game_name || "The Race")}</h1>
         <p class="muted small" style="margin-top:6px">Four teams. One finish line nobody has seen.</p>
       </div>
-
+ 
       ${!CONFIGURED ? `<div class="card" style="border-color:var(--warn)">
         <h2>Not connected yet</h2>
         <p class="small muted" style="margin-top:8px">Open <code class="k">index.html</code> and paste your
         Supabase project URL and anon key into the CONFIG block at the top.</p></div>` : ""}
-
+ 
       <div class="card">
         <div class="field">
           <label>Your team code</label>
@@ -283,16 +283,16 @@ async function renderLogin(msg){
         ${msg ? `<p class="small" style="color:var(--bad);margin-bottom:10px">${esc(msg)}</p>` : ""}
         <button class="btn" id="go">Enter the race</button>
       </div>
-
+ 
       ${pub?.leaderboard?.length ? `
         <h3 style="margin:22px 0 10px">Standings</h3>
         ${leaderboardHTML(pub.leaderboard, pub.total_legs)}` : ""}
-
+ 
       <p class="center tiny muted" style="margin-top:26px">
         <a href="#admin">Organiser</a>
       </p>
     </div>`;
-
+ 
   const input = document.getElementById("code");
   const go = async () => {
     const v = input.value.trim();
@@ -303,7 +303,7 @@ async function renderLogin(msg){
   document.getElementById("go").onclick = go;
   input.onkeydown = e => { if (e.key === "Enter") go(); };
 }
-
+ 
 /* --- name yourselves ------------------------------------------------ */
 function renderNaming(){
   T.naming = true;
@@ -328,7 +328,7 @@ function renderNaming(){
         <button onclick="logout()" style="color:var(--muted);text-decoration:underline">Wrong team?</button>
       </p>
     </div>`;
-
+ 
   const input = document.getElementById("tname");
   const btn = document.getElementById("tsave");
   const go = async () => {
@@ -349,7 +349,7 @@ function renderNaming(){
   input.onkeydown = e => { if (e.key === "Enter") go(); };
   input.focus();
 }
-
+ 
 function renameTeam(){
   const t = T.state.team;
   modal.innerHTML = `
@@ -372,7 +372,7 @@ function renameTeam(){
     } catch (e){ toast(e.message || "Failed", "bad"); }
   };
 }
-
+ 
 /* --- leaderboard ---------------------------------------------------- */
 function leaderboardHTML(list, totalLegs){
   return list.map((t, i) => {
@@ -398,12 +398,12 @@ function leaderboardHTML(list, totalLegs){
     </div>`;
   }).join("");
 }
-
+ 
 /* --- team home ------------------------------------------------------ */
 function renderTeam(){
   const d = T.state, t = d.team, leg = d.leg || {};
   const total = d.total_legs || 5;
-
+ 
   let hero = "";
   if (!d.started){
     hero = `<div class="hero waiting">
@@ -451,7 +451,7 @@ function renderTeam(){
           `Get ${need - have} more approved and the location drops.${pend ? ` ${pend} waiting on approval.` : ""}`}</p>
     </div>`;
   }
-
+ 
   const ch = d.challenges || [];
   const groups = {
     todo:     ch.filter(c => !c.status || c.status === "rejected"),
@@ -459,7 +459,7 @@ function renderTeam(){
     done:     ch.filter(c => c.status === "approved")
   };
   const list = groups[T.tab] || [];
-
+ 
   app.innerHTML = `
     <div class="topbar"><div class="wrap">
       <div>
@@ -470,24 +470,25 @@ function renderTeam(){
       </div>
       <span class="badge">${t.stage === "finished" ? "Done" : `Stop ${t.current_leg} of ${total}`}</span>
     </div></div>
-
+ 
     <div class="wrap">
       <div class="progress">${Array.from({length:total}, (_, i) => {
         const n = i + 1;
         return `<i class="${n < t.current_leg || t.stage === "finished" ? "on" : n === t.current_leg ? "now" : ""}"></i>`;
       }).join("")}</div>
-
+ 
       ${hero}
-
+ 
       ${d.can_bank ? `
         <h3 style="margin:22px 0 10px">Challenge pool</h3>
         ${d.bank_target > t.current_leg ? `
           <div class="card" style="border-color:var(--accent);margin-bottom:12px">
             <strong style="font-size:15px">⚡ Get ahead while you walk</strong>
             <p class="small muted" style="margin-top:6px">
-              Anything you bank now counts toward stop ${d.bank_target}, not this one.
-              ${d.bank_banked}/${d.bank_required} done already — get them all and the next
-              location opens the moment your arrival photo is approved.</p>
+              Anything you bank now counts toward stop ${d.bank_target}:
+              ${d.bank_banked}/${d.bank_required} done already. Get them all and the next
+              location opens the moment your arrival photo is approved. Nothing is wasted —
+              extra challenges roll over to the stop after that.</p>
           </div>` : ""}
         <div class="tabs">
           <button data-tab="todo"    class="${T.tab==="todo"?"on":""}">To do ${groups.todo.length}</button>
@@ -508,10 +509,10 @@ function renderTeam(){
           </div>`).join("")
           : `<p class="muted small center" style="padding:18px">Nothing here.</p>`}
       ` : ""}
-
+ 
       <h3 style="margin:22px 0 10px">Standings</h3>
       ${leaderboardHTML(d.leaderboard || [], total)}
-
+ 
       ${(d.feed || []).length ? `
         <h3 style="margin:22px 0 10px">Recent decisions</h3>
         ${d.feed.slice(0, 6).map(f => `
@@ -522,41 +523,41 @@ function renderTeam(){
             </div>
             <span class="pill ${f.status}">${f.status}</span>
           </div>`).join("")}` : ""}
-
+ 
       <p class="center tiny muted" style="margin:26px 0 10px">
         <button onclick="logout()" style="color:var(--muted);text-decoration:underline">Leave team</button>
       </p>
     </div>`;
-
+ 
   document.querySelectorAll(".tabs button").forEach(b =>
     b.onclick = () => { T.tab = b.dataset.tab; renderTeam(); });
 }
-
+ 
 function logout(){
   LS.code = ""; T.code = ""; T.state = null; T.naming = false; stopPoll(); renderLogin();
 }
-
+ 
 /* --- submit sheet --------------------------------------------------- */
 let pending = null;
-
+ 
 function openSubmit(kind, challengeId){
   const d = T.state;
   const ch = kind === "challenge"
     ? (d.challenges || []).find(c => c.id === challengeId) : null;
   pending = { kind, challengeId, file:null };
-
+ 
   modal.innerHTML = `
     <div class="sheet" id="sheet"><div class="inner">
       <div class="between" style="margin-bottom:14px">
         <h2>${kind === "challenge" ? esc(ch?.title || "Challenge") : "Arrival photo"}</h2>
         <button onclick="closeSheet()" class="muted" style="font-size:26px;line-height:1">×</button>
       </div>
-
+ 
       <p class="small muted" style="margin-bottom:14px">
         ${kind === "challenge" ? esc(ch?.description || "Send your proof.")
                                : esc(d.leg?.photo_task || "Send your arrival photo.")}
       </p>
-
+ 
       <div id="pv"></div>
       <div class="drop" id="drop">
         <div style="font-size:32px">📷</div>
@@ -568,17 +569,17 @@ function openSubmit(kind, challengeId){
       </div>
       <input type="file" id="cam" accept="image/*,video/*" capture="environment" class="hide">
       <input type="file" id="lib" accept="image/*,video/*" class="hide">
-
+ 
       <div class="field" style="margin-top:14px">
         <label>Note for the organiser (optional)</label>
         <textarea id="note" placeholder="Anything they should know"></textarea>
       </div>
-
+ 
       <div class="bar hide" id="bar"><span></span></div>
       <button class="btn" id="send" style="margin-top:8px" disabled>Send for approval</button>
       <p class="tiny muted center" style="margin-top:10px">Big videos take a while on a weak signal — keep the app open.</p>
     </div></div>`;
-
+ 
   const cam = document.getElementById("cam"), lib = document.getElementById("lib");
   document.getElementById("camBtn").onclick = () => cam.click();
   document.getElementById("libBtn").onclick = () => lib.click();
@@ -586,7 +587,7 @@ function openSubmit(kind, challengeId){
   document.getElementById("send").onclick = send;
   document.getElementById("sheet").onclick = e => { if (e.target.id === "sheet") closeSheet(); };
 }
-
+ 
 function pick(file){
   if (!file) return;
   pending.file = file;
@@ -600,9 +601,9 @@ function pick(file){
   document.getElementById("drop").classList.add("hide");
   document.getElementById("send").disabled = false;
 }
-
+ 
 function closeSheet(){ modal.innerHTML = ""; pending = null; }
-
+ 
 async function send(){
   if (!pending?.file) return;
   const btn = document.getElementById("send");
@@ -610,7 +611,7 @@ async function send(){
   btn.disabled = true; btn.textContent = "Uploading…";
   bar.classList.remove("hide");
   const setPct = p => bar.firstElementChild.style.width = p + "%";
-
+ 
   try {
     const m = await uploadMedia(pending.file, T.state.team.id, setPct);
     const note = document.getElementById("note").value.trim() || null;
@@ -619,7 +620,7 @@ async function send(){
           p_media_path:m.path, p_media_type:m.type, p_note:note })
       : await rpc("submit_checkpoint", { p_code:T.code,
           p_media_path:m.path, p_media_type:m.type, p_note:note });
-
+ 
     if (res?.ok === false){
       const msg = { NOT_STARTED:"The race hasn't started yet.",
                     WRONG_STAGE:"That's not what you're on right now — refresh.",
@@ -638,12 +639,12 @@ async function send(){
     btn.disabled = false; btn.textContent = "Send for approval"; bar.classList.add("hide");
   }
 }
-
+ 
 /* =====================================================================
    ADMIN
    ===================================================================== */
 const A = { pin:"", data:null, tab:"queue", poll:null, board:null, viewTeam:null, routeTeam:null };
-
+ 
 async function refreshAdmin(quiet){
   try {
     const d = await rpc("admin_state", { p_pin: A.pin });
@@ -657,13 +658,13 @@ async function refreshAdmin(quiet){
     } else if (!quiet) toast(e.message || "Connection problem", "bad");
   }
 }
-
+ 
 function lockAdmin(){
   A.pin = ""; A.data = null; A.board = null; A.viewTeam = null; A.tab = "queue";
   stopAdminPoll(); renderPin("Locked.");
 }
 function stopAdminPoll(){ if (A.poll) clearInterval(A.poll); A.poll = null; }
-
+ 
 function renderPin(msg){
   app.innerHTML = `
     <div class="wrap" style="padding-top:60px">
@@ -687,12 +688,12 @@ function renderPin(msg){
   document.getElementById("in").onclick = go;
   i.onkeydown = e => { if (e.key === "Enter") go(); };
 }
-
+ 
 function renderAdmin(){
   const d = A.data;
   const tabs = [["queue", `Queue ${d.queue.length ? "· " + d.queue.length : ""}`],
                 ["teams","Teams"], ["route","Route"], ["challenges","Challenges"], ["settings","Settings"]];
-
+ 
   app.innerHTML = `
     <div class="topbar"><div class="wrap">
       <div><strong style="font-size:17px">${esc(d.game_name)}</strong>
@@ -708,14 +709,14 @@ function renderAdmin(){
         `<button data-tab="${k}" class="${A.tab === k ? "on" : ""}">${esc(l)}</button>`).join("")}</div>
       <div id="panel"></div>
     </div>`;
-
+ 
   document.querySelectorAll(".tabs button").forEach(b =>
     b.onclick = () => { A.tab = b.dataset.tab; A.viewTeam = null; renderAdmin(); });
-
+ 
   ({ queue:panelQueue, teams:panelTeams, route:panelRoute, board:panelBoard,
      challenges:panelChallenges, settings:panelSettings }[A.tab] || panelQueue)();
 }
-
+ 
 function panelQueue(){
   const q = A.data.queue;
   document.getElementById("panel").innerHTML = q.length ? q.map(s => `
@@ -727,7 +728,7 @@ function panelQueue(){
       <div class="task" style="margin:0 0 12px">
         <div class="kicker">${s.kind === "checkpoint"
           ? `Arrival at ${esc(s.stop_name || "stop " + s.leg_idx)}`
-          : `Challenge · counts toward stop ${s.leg_idx}`}</div>
+          : "Challenge"}</div>
         <p style="margin-top:5px;font-weight:600">${esc(s.kind === "checkpoint" ? s.photo_task : s.challenge_title)}</p>
         ${s.kind === "challenge" && s.challenge_desc
           ? `<p class="small muted" style="margin-top:4px">${esc(s.challenge_desc)}</p>` : ""}
@@ -745,7 +746,7 @@ function panelQueue(){
     : `<div class="card center"><div style="font-size:38px">✅</div>
        <p class="muted small" style="margin-top:8px">Nothing waiting. This refreshes on its own.</p></div>`;
 }
-
+ 
 async function decide(id, approve){
   let note = null;
   if (!approve){
@@ -758,7 +759,7 @@ async function decide(id, approve){
     refreshAdmin(true);
   } catch (e){ toast(e.message || "Failed", "bad"); }
 }
-
+ 
 function panelTeams(){
   document.getElementById("panel").innerHTML = `
     ${A.data.teams.map(t => `
@@ -781,7 +782,7 @@ function panelTeams(){
       </div>`).join("")}
     <button class="btn ghost" onclick="editTeam(null)">+ Add team</button>`;
 }
-
+ 
 /* Everything one team can see, plus the parts they can't yet. */
 async function openBoard(id){
   A.viewTeam = id; A.tab = "board"; A.board = null;
@@ -790,20 +791,20 @@ async function openBoard(id){
     renderAdmin();
   } catch (e){ toast(e.message || "Couldn't load that team", "bad"); }
 }
-
+ 
 function panelBoard(){
   const b = A.board;
   const panel = document.getElementById("panel");
   if (!b || b.ok === false){ panel.innerHTML = `<p class="muted small center" style="padding:24px">Loading…</p>`; return; }
   const t = b.team;
-
+ 
   const statePill = { done:"approved", current:"pending", locked:"todo" };
   const stateWord = { done:"Done", current:"Here now", locked:"Locked" };
-
+ 
   panel.innerHTML = `
     <button class="btn ghost sm" style="margin-bottom:14px"
             onclick="A.tab='teams';A.viewTeam=null;renderAdmin()">← All teams</button>
-
+ 
     <div class="card" style="border-color:${esc(t.color)}">
       <div class="between">
         <div>
@@ -822,7 +823,7 @@ function panelBoard(){
           ? `Finished at ${new Date(t.finished_at).toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"})}`
           : `Stop ${t.current_leg} of ${t.total} · ${t.banked}/${t.required} challenges banked`}</p>
     </div>
-
+ 
     <h3 style="margin:22px 0 10px">Their route</h3>
     ${(b.route || []).map(l => `
       <div class="card" style="${l.state === "current" ? "border-color:var(--warn)" : ""}">
@@ -834,7 +835,7 @@ function panelBoard(){
         <p class="small muted" style="margin-top:4px">📸 ${esc(l.photo_task || "— not set —")}</p>
         <p class="tiny muted" style="margin-top:6px">${l.banked}/${l.required} banked on this leg</p>
       </div>`).join("")}
-
+ 
     <h3 style="margin:22px 0 10px">Everything they've sent (${(b.submissions || []).length})</h3>
     ${(b.submissions || []).length ? b.submissions.map(s => `
       <div class="item">
@@ -855,7 +856,7 @@ function panelBoard(){
       </div>`).join("")
       : `<p class="muted small center" style="padding:18px">Nothing yet.</p>`}`;
 }
-
+ 
 function editTeam(id){
   const t = id ? A.data.teams.find(x => x.id === id) : null;
   sheet(`${t ? "Edit" : "New"} team`, `
@@ -879,7 +880,7 @@ async function delTeam(id){
   if (!confirm("Delete this team and all its submissions?")) return;
   if (await guard(() => rpc("admin_delete_team", { p_pin:A.pin, p_id:id }), "Team deleted")) closeSheet();
 }
-
+ 
 function nudge(id, leg){
   sheet("Move team by hand", `
     <p class="small muted" style="margin-bottom:14px">For when something goes wrong on the day.</p>
@@ -896,26 +897,26 @@ function nudge(id, leg){
       p_leg:parseInt(val("f_leg"), 10), p_stage:val("f_stage") });
   });
 }
-
+ 
 /* Each team walks its own list of stops; everyone ends at one shared
    final destination. */
 function panelRoute(){
   const teams = A.data.teams;
   const legs  = A.data.legs;
   const final = legs.find(l => !l.team_id && l.is_final) || null;
-
+ 
   if (!A.routeTeam || !teams.some(t => t.id === A.routeTeam))
     A.routeTeam = teams[0]?.id || null;
   const team = teams.find(t => t.id === A.routeTeam);
   const mine = legs.filter(l => l.team_id === A.routeTeam)
                    .sort((a, b) => a.idx - b.idx);
-
+ 
   // The pool has to cover the hungriest route, since a team can't reuse a challenge.
   const need = Math.max(0, ...teams.map(t =>
     legs.filter(l => l.team_id === t.id).reduce((s, l) => s + l.required_challenges, 0)
     + (final ? final.required_challenges : 0)));
   const have = A.data.challenges.filter(c => c.active).length;
-
+ 
   const legCard = (l, n) => `
     <div class="card">
       <div class="between">
@@ -927,38 +928,38 @@ function panelRoute(){
       <button class="btn ghost sm" style="margin-top:12px;width:100%"
               onclick="editLeg('${l.id}')">Edit</button>
     </div>`;
-
+ 
   document.getElementById("panel").innerHTML = `
     ${have < need ? `<div class="card" style="border-color:var(--warn)">
       <strong>Pool too small</strong>
       <p class="small muted" style="margin-top:6px">The longest route costs ${need} challenges in
       total and a team can't reuse one, but only ${have} are active. Add ${need - have} more.</p></div>` : ""}
-
+ 
     <div class="tabs" style="margin-bottom:14px">
       ${teams.map(t => `<button data-rt="${t.id}" class="${t.id === A.routeTeam ? "on" : ""}">
         ${esc(t.emoji)} ${esc(t.name)}</button>`).join("")}
     </div>
-
+ 
     <p class="small muted" style="margin-bottom:12px">
       ${esc(team?.name || "")}'s own stops — ${mine.length} of them, then the shared finish line.
     </p>
-
+ 
     ${mine.length ? mine.map((l, i) => legCard(l, i + 1)).join("")
       : `<p class="muted small center" style="padding:18px">No stops yet for this team.</p>`}
-
+ 
     <div class="row" style="margin-bottom:20px">
       <button class="btn ghost" onclick="editLeg(null,'${A.routeTeam}')">+ Add stop</button>
       <button class="btn ghost" onclick="copyRoute()">Copy route to…</button>
     </div>
-
+ 
     <h3 style="margin:22px 0 10px">Shared finish line — every team</h3>
     ${final ? legCard(final, "🏁")
       : `<button class="btn ghost" onclick="editLeg(null,null,true)">+ Set the final destination</button>`}`;
-
+ 
   document.querySelectorAll("[data-rt]").forEach(b =>
     b.onclick = () => { A.routeTeam = b.dataset.rt; renderAdmin(); });
 }
-
+ 
 function copyRoute(){
   const from = A.data.teams.find(t => t.id === A.routeTeam);
   const others = A.data.teams.filter(t => t.id !== A.routeTeam);
@@ -972,7 +973,7 @@ function copyRoute(){
         `<option value="${t.id}">${esc(t.emoji)} ${esc(t.name)}</option>`).join("")}</select></div>
   `, async () => rpc("admin_copy_route", { p_pin:A.pin, p_from:A.routeTeam, p_to:val("f_to") }));
 }
-
+ 
 function editLeg(id, teamId, forceFinal){
   const l = id ? A.data.legs.find(x => x.id === id) : null;
   const owner = l ? l.team_id : (teamId || null);
@@ -980,7 +981,7 @@ function editLeg(id, teamId, forceFinal){
   const team = A.data.teams.find(t => t.id === owner);
   const mine = A.data.legs.filter(x => x.team_id === owner);
   const nextIdx = mine.length ? Math.max(...mine.map(x => x.idx)) + 1 : 1;
-
+ 
   sheet(isFinal ? "Final destination" : (l ? "Edit stop" : `New stop for ${team?.name || ""}`), `
     ${isFinal ? `<p class="small muted" style="margin-bottom:14px">Every team finishes here.</p>` : ""}
     <div class="grid2">
@@ -1015,7 +1016,7 @@ async function delLeg(id){
   if (!confirm("Delete this stop?")) return;
   if (await guard(() => rpc("admin_delete_leg", { p_pin:A.pin, p_id:id }), "Stop deleted")) closeSheet();
 }
-
+ 
 function panelChallenges(){
   document.getElementById("panel").innerHTML = `
     <p class="small muted" style="margin-bottom:12px">One shared pool. A team can bank each challenge once
@@ -1030,7 +1031,7 @@ function panelChallenges(){
       </div>`).join("")}
     <button class="btn ghost" style="margin-top:8px" onclick="editCh(null)">+ Add challenge</button>`;
 }
-
+ 
 function editCh(id){
   const c = id ? A.data.challenges.find(x => x.id === id) : null;
   sheet(c ? "Edit challenge" : "New challenge", `
@@ -1051,7 +1052,7 @@ async function delCh(id){
   if (!confirm("Delete this challenge?")) return;
   if (await guard(() => rpc("admin_delete_challenge", { p_pin:A.pin, p_id:id }), "Challenge deleted")) closeSheet();
 }
-
+ 
 function panelSettings(){
   const d = A.data;
   document.getElementById("panel").innerHTML = `
@@ -1063,20 +1064,20 @@ function panelSettings(){
       <button class="btn ${d.started ? "ghost" : ""}" onclick="setStarted(${!d.started})">
         ${d.started ? "Pause the race" : "🏁 Start the race"}</button>
     </div>
-
+ 
     <div class="card">
       <h2>Game name</h2>
       <div class="field" style="margin-top:10px"><input id="s_name" value="${esc(d.game_name)}"></div>
       <button class="btn ghost" onclick="saveName()">Save</button>
     </div>
-
+ 
     <div class="card">
       <h2>Admin PIN</h2>
       <div class="field" style="margin-top:10px">
         <input id="s_pin" type="password" placeholder="New PIN"></div>
       <button class="btn ghost" onclick="savePin()">Change PIN</button>
     </div>
-
+ 
     <div class="card" style="border-color:var(--bad)">
       <h2>Reset everything</h2>
       <p class="small muted" style="margin:8px 0 14px">Wipes all submissions and puts every team back
@@ -1084,7 +1085,7 @@ function panelSettings(){
       <button class="btn bad" onclick="resetGame()">Reset the race</button>
     </div>`;
 }
-
+ 
 /* Every admin action goes through this, so a call that fails says so
    instead of leaving a button that looks broken. */
 async function guard(run, okMsg){
@@ -1099,7 +1100,7 @@ async function guard(run, okMsg){
     return null;
   }
 }
-
+ 
 async function setStarted(v){
   guard(() => rpc("admin_set_settings",
     { p_pin:A.pin, p_game_name:null, p_started:v, p_new_pin:null }),
@@ -1121,10 +1122,10 @@ async function resetGame(){
   guard(() => rpc("admin_reset_game", { p_pin:A.pin }),
     r => `${r.teams_reset} teams back to the start · ${r.submissions_cleared} submissions cleared`);
 }
-
+ 
 /* --- generic admin sheet -------------------------------------------- */
 const val = id => document.getElementById(id).value.trim();
-
+ 
 function sheet(title, body, onSave){
   modal.innerHTML = `
     <div class="sheet" id="sheet"><div class="inner">
@@ -1146,20 +1147,20 @@ function sheet(title, body, onSave){
     } catch (e){ toast(e.message || "Failed", "bad"); b.disabled = false; b.textContent = "Save"; }
   };
 }
-
+ 
 /* =====================================================================
    ROUTING
    ===================================================================== */
 async function route(){
   stopPoll(); stopAdminPoll(); closeSheet();
-
+ 
   if (location.hash === "#admin"){
     // A.pin only ever lives in memory, so a fresh load always asks.
     if (A.pin) await refreshAdmin(); else renderPin();
     if (A.pin) A.poll = setInterval(() => refreshAdmin(true), 6000);
     return;
   }
-
+ 
   if (LS.code){
     T.code = LS.code;
     await refreshTeam();
@@ -1168,7 +1169,7 @@ async function route(){
     renderLogin();
   }
 }
-
+ 
 window.addEventListener("hashchange", route);
 document.addEventListener("visibilitychange", () => {
   if (document.visibilityState === "visible"){
@@ -1180,3 +1181,4 @@ route();
 </script>
 </body>
 </html>
+ 
